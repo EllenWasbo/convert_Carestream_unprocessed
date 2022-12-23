@@ -10,3 +10,6 @@ pydicom
 # What the script does
 You will be asked to locate a folder where the DICOM images are. The script will search for all .dcm files within that folder/subfolders. Each file that trigger an AttributeError of pydicom.dcmread(file) will be subject to the fix and saved with the new name.
 
+# Known issues
+Any DICOM file in the selected folder, also those not needing a fix will be saved with the new name. I did not have a good idea on how to verify it as when the first error will configure the fix and subsequent errors are thus not raised. Currently no plans to fix this as it fulfilled my needs.
+
